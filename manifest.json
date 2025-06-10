@@ -1,0 +1,29 @@
+{
+  "name": "Consulteo - Plateforme de consultants",
+  "short_name": "Consulteo",
+  "description": "Trouvez et réservez les meilleurs consultants pour vos projets",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "assets/img/placeholder.svg",
+      "sizes": "120x120",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "screenshots": [
+    {
+      "src": "assets/img/hero.jpg",
+      "sizes": "1200x400",
+      "type": "image/jpeg",
+      "label": "Page d'accueil Consulteo"
+    }
+  ]
+}
