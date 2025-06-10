@@ -949,7 +949,9 @@ function handleAccountSubmit(event) {
     
     // Événement GA4
     pushDataLayer('sign_up', {
-        method: 'email'
+        method: 'email',
+        email: formData.get('email'),
+        phone: formData.get('telephone')
     });
     
     alert('Compte créé avec succès !');
