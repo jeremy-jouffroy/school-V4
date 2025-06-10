@@ -890,6 +890,35 @@ function handleCheckoutSubmit(event) {
         payment: formData.get('paiement')
     };
     
+    // Préparer les items pour GA4
+    const items = cart.map(item => {
+        const product = getProductById(item.id);
+        return product ? {
+            item_id: product.id,
+            item_name: `${product.prenom} ${product.nom}`,
+            item_category: product.catégorie,
+            price: product.prix,
+            ean: product.ean,
+            quantity: item.quantity
+        } : null;
+    }).filter(item => item);
+    
+    // Événement GA4 add_shipping_info
+    pushDataLayer('add_shipping_info', {
+        currency: 'EUR',
+        value: orderData.total,
+        shipping_tier: orderData.delivery === 'bureau' ? 'Standard' : 'Free',
+        items
+    });
+    
+    // Événement GA4 add_payment_info
+    pushDataLayer('add_payment_info', {
+        currency: 'EUR',
+        value: orderData.total,
+        payment_type: orderData.payment === '90j' ? 'deferred_payment' : 'bank_transfer',
+        items
+    });
+    
     const order = Purchase.create(orderData);
     Cart.clear();
     
