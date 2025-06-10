@@ -343,10 +343,24 @@ const Account = {
     }
 };
 
-// Fonction de tracking GA4
+// Fonction de tracking GA4 avec dimensions communes
 function pushDataLayer(event, params = {}) {
     if (typeof window !== 'undefined') {
         window.dataLayer = window.dataLayer || [];
+        
+        // Ajouter les dimensions communes pour page_view
+        if (event === 'page_view') {
+            const account = Account.get();
+            
+            params = {
+                ...params,
+                country: 'fr',
+                language: 'fr-fr',
+                user_logged_in: account !== null,
+                email: account ? account.email : undefined
+            };
+        }
+        
         window.dataLayer.push({
             event,
             ...params
@@ -488,7 +502,9 @@ function renderCategoryPage() {
     // Événements GA4
     pushDataLayer('page_view', {
         page_title: `${category} - Consulteo`,
-        page_location: window.location.href
+        page_location: window.location.href,
+        page_name: `category ${category}`,
+        page_category: 'PLP'
     });
     
     pushDataLayer('view_item_list', {
@@ -601,7 +617,9 @@ function renderProductPage() {
     // Événements GA4
     pushDataLayer('page_view', {
         page_title: `${product.prenom} ${product.nom} - Consulteo`,
-        page_location: window.location.href
+        page_location: window.location.href,
+        page_name: `product ${product.prenom} ${product.nom}`,
+        page_category: 'PDP'
     });
     
     pushDataLayer('view_item', {
@@ -656,7 +674,9 @@ function renderCartPage() {
     // Événement GA4
     pushDataLayer('page_view', {
         page_title: 'Panier - Consulteo',
-        page_location: window.location.href
+        page_location: window.location.href,
+        page_name: 'checkout',
+        page_category: 'checkout'
     });
     
     if (cart.length > 0) {
@@ -725,7 +745,9 @@ function renderConfirmationPage() {
     // Événements GA4
     pushDataLayer('page_view', {
         page_title: 'Commande confirmée - Consulteo',
-        page_location: window.location.href
+        page_location: window.location.href,
+        page_name: 'purchase confirmation',
+        page_category: 'checkout'
     });
     
     const items = order.items.map(item => {
@@ -758,7 +780,9 @@ function renderAccountPage() {
     // Événement GA4
     pushDataLayer('page_view', {
         page_title: 'Créer un compte - Consulteo',
-        page_location: window.location.href
+        page_location: window.location.href,
+        page_name: 'account',
+        page_category: 'account'
     });
 }
 
