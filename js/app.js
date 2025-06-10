@@ -766,6 +766,7 @@ function renderConfirmationPage() {
         transaction_id: order.id.toString(),
         currency: 'EUR',
         value: order.total,
+        shipping: order.deliveryPrice,
         items
     });
 }
