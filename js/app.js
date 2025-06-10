@@ -325,21 +325,21 @@ const Purchase = {
     }
 };
 
-// Gestion du sessionStorage pour le compte
+// Gestion du localStorage pour le compte
 const Account = {
-    key: 'consulteo-user',
+    key: 'consulteo-compte',
     
     save(userData) {
-        sessionStorage.setItem(this.key, JSON.stringify(userData));
+        localStorage.setItem(this.key, JSON.stringify(userData));
     },
     
     get() {
-        const user = sessionStorage.getItem(this.key);
+        const user = localStorage.getItem(this.key);
         return user ? JSON.parse(user) : null;
     },
     
     clear() {
-        sessionStorage.removeItem(this.key);
+        localStorage.removeItem(this.key);
     }
 };
 
@@ -884,15 +884,14 @@ function handleAccountSubmit(event) {
         return;
     }
     
-    const userData = {
+    // Stocker seulement les informations de base dans localStorage
+    const accountData = {
         email: formData.get('email'),
         telephone: formData.get('telephone'),
-        acceptTerms: formData.get('acceptTerms') === 'on',
-        newsletter: formData.get('newsletter') === 'on',
         createdAt: new Date().toISOString()
     };
     
-    Account.save(userData);
+    Account.save(accountData);
     
     // Événement GA4
     pushDataLayer('sign_up', {
