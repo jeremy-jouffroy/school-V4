@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte - Consulteo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="index.html">Consulteo</a>
+            </div>
+            <nav class="header-nav">
+                <a href="catégorie.html?cat=Managers" class="nav-link">Managers</a>
+                <a href="catégorie.html?cat=Leads" class="nav-link">Leads</a>
+                <a href="catégorie.html?cat=Consultants" class="nav-link">Consultants</a>
+            </nav>
+            <div class="header-actions">
+                <a href="compte.html" class="action-link">Compte</a>
+                <a href="panier.html" class="action-link cart-link">
+                    Panier
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="account-page">
+                <div class="breadcrumb">
+                    <a href="index.html">Accueil</a>
+                    <span class="breadcrumb-separator">></span>
+                    <span>Création de compte</span>
+                </div>
+
+                <h1>Créer mon compte</h1>
+
+                <form class="account-form" id="account-form">
+                    <div class="form-group">
+                        <label for="account-email">Adresse e-mail *</label>
+                        <input type="email" id="account-email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="account-tel">Numéro de téléphone *</label>
+                        <input type="tel" id="account-tel" name="telephone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="account-password">Mot de passe *</label>
+                        <input type="password" id="account-password" name="password" required minlength="8">
+                        <small class="form-help">Au moins 8 caractères</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="account-password-confirm">Confirmer le mot de passe *</label>
+                        <input type="password" id="account-password-confirm" name="passwordConfirm" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="acceptTerms" required>
+                            J'accepte les <a href="#" target="_blank">conditions générales de vente</a> *
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter">
+                            Je souhaite recevoir les offres et actualités par e-mail
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Créer mon compte</button>
+                </form>
+
+                <div class="account-login">
+                    <p>Vous avez déjà un compte ? <a href="#" class="login-link">Se connecter</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">CGV</a>
+                <a href="#" class="footer-link">Confidentialité</a>
+                <a href="#" class="footer-link">Politique&nbsp;cookies</a>
+                <a href="#" class="footer-link">Blog</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/converteo/" target="_blank" rel="noopener" class="footer-link">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            App.init();
+            App.renderAccountPage();
+        });
+    </script>
+</body>
+</html>

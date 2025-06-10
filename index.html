@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Consulteo - Trouvez votre consultant expert</title>
+    <meta name="description" content="Découvrez notre sélection de consultants experts : Managers, Leads et Consultants spécialisés. Réservez dès maintenant le professionnel adapté à vos besoins.">
+    <meta name="keywords" content="consultant, expert, manager, lead developer, transformation digitale, freelance">
+    <meta name="author" content="Consulteo">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://votre-username.github.io/consulteo/">
+    <meta property="og:title" content="Consulteo - Trouvez votre consultant expert">
+    <meta property="og:description" content="Découvrez notre sélection de consultants experts pour vos projets">
+    <meta property="og:image" content="assets/img/hero.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://votre-username.github.io/consulteo/">
+    <meta property="twitter:title" content="Consulteo - Trouvez votre consultant expert">
+    <meta property="twitter:description" content="Découvrez notre sélection de consultants experts pour vos projets">
+    <meta property="twitter:image" content="assets/img/hero.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/placeholder.svg">
+    
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        // Remplacez GA_MEASUREMENT_ID par votre ID de mesure
+        // gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="index.html">Consulteo</a>
+            </div>
+            <nav class="header-nav">
+                <a href="catégorie.html?cat=Managers" class="nav-link">Managers</a>
+                <a href="catégorie.html?cat=Leads" class="nav-link">Leads</a>
+                <a href="catégorie.html?cat=Consultants" class="nav-link">Consultants</a>
+            </nav>
+            <div class="header-actions">
+                <a href="compte.html" class="action-link">Compte</a>
+                <a href="panier.html" class="action-link cart-link">
+                    Panier
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <img src="assets/img/hero.jpg" alt="Équipe de consultants professionnels" class="hero-image">
+                <div class="hero-text">
+                    <h1>Trouvez le consultant parfait pour votre projet</h1>
+                    <p class="hero-slogan">Des experts qualifiés prêts à transformer vos défis en succès</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-consultants">
+            <div class="container">
+                <h2>Top 3 de la semaine</h2>
+                <div class="consultants-grid" id="top-consultants-grid">
+                    <!-- Généré par JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">CGV</a>
+                <a href="#" class="footer-link">Confidentialité</a>
+                <a href="#" class="footer-link">Politique&nbsp;cookies</a>
+                <a href="#" class="footer-link">Blog</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/converteo/" target="_blank" rel="noopener" class="footer-link">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        // Initialisation de la page d'accueil
+        document.addEventListener('DOMContentLoaded', function() {
+            App.init();
+            App.renderTopConsultants();
+            
+            // Événement GA4 page_view
+            pushDataLayer('page_view', {
+                page_title: 'Accueil - Consulteo',
+                page_location: window.location.href
+            });
+        });
+    </script>
+</body>
+</html>

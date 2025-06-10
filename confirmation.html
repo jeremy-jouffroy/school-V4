@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande confirmée - Consulteo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="index.html">Consulteo</a>
+            </div>
+            <nav class="header-nav">
+                <a href="catégorie.html?cat=Managers" class="nav-link">Managers</a>
+                <a href="catégorie.html?cat=Leads" class="nav-link">Leads</a>
+                <a href="catégorie.html?cat=Consultants" class="nav-link">Consultants</a>
+            </nav>
+            <div class="header-actions">
+                <a href="compte.html" class="action-link">Compte</a>
+                <a href="panier.html" class="action-link cart-link">
+                    Panier
+                    <span class="cart-badge" id="cart-badge">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="confirmation-page">
+                <div class="confirmation-header">
+                    <div class="success-icon">✓</div>
+                    <h1>Merci pour votre commande !</h1>
+                    <p class="confirmation-message">
+                        Votre commande a été enregistrée avec succès. Vous allez recevoir un e-mail de confirmation.
+                    </p>
+                </div>
+
+                <div class="order-details" id="order-details">
+                    <!-- Généré par JavaScript -->
+                </div>
+
+                <div class="confirmation-actions">
+                    <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+                    <a href="catégorie.html?cat=Managers" class="btn btn-secondary">Continuer mes achats</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">CGV</a>
+                <a href="#" class="footer-link">Confidentialité</a>
+                <a href="#" class="footer-link">Politique&nbsp;cookies</a>
+                <a href="#" class="footer-link">Blog</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/converteo/" target="_blank" rel="noopener" class="footer-link">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            App.init();
+            App.renderConfirmationPage();
+        });
+    </script>
+</body>
+</html>
