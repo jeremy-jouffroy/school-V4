@@ -1,6 +1,6 @@
 # 📄 Consulteo - Site e-commerce de consultants
 
-Consulteo est un site e-commerce fictif développé pour une formation Converteo. Il permet de "vendre" des consultants avec un système de panier complet.
+Consulteo est un site e-commerce fictif développé pour une formation consulteo. Il permet de "vendre" des consultants avec un système de panier complet.
 
 ## 🚀 Déployement sur GitHub Pages
 
