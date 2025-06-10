@@ -539,27 +539,41 @@ function renderProductPage() {
             <div class="product-info">
                 <h1>${product.prenom} ${product.nom}</h1>
                 <p class="product-category">${product.catégorie}</p>
-                <p class="product-description">${product.courteDesc}</p>
+                <p class="product-short-description">${product.courteDesc}</p>
+                
+                <div class="product-price">
+                    ${formatPrice(product.prix)}
+                    <span class="price-period">/ jour</span>
+                </div>
+                
+                <div class="product-actions">
+                    <button class="btn btn-primary btn-large" onclick="addToCart('${product.id}')">
+                        Ajouter au panier
+                    </button>
+                </div>
                 
                 <div class="product-meta">
+                    <h3>Informations techniques</h3>
                     <div class="product-meta-item">
-                        <span>EAN:</span>
+                        <strong>Code EAN:</strong>
                         <span>${product.ean}</span>
                     </div>
                     <div class="product-meta-item">
-                        <span>SKU:</span>
+                        <strong>Référence (SKU):</strong>
                         <span>${product.id}</span>
+                    </div>
+                    <div class="product-meta-item">
+                        <strong>Catégorie:</strong>
+                        <span>${product.catégorie}</span>
+                    </div>
+                    <div class="product-meta-item">
+                        <strong>Tarif journalier:</strong>
+                        <span>${formatPrice(product.prix)} HT</span>
                     </div>
                 </div>
                 
-                <p class="product-price">${formatPrice(product.prix)}/jour</p>
-                
-                <button class="btn btn-primary btn-large" onclick="addToCart('${product.id}')">
-                    Ajouter au panier
-                </button>
-                
                 <div class="product-skills">
-                    <h3>Compétences</h3>
+                    <h3>Compétences et expertises</h3>
                     <div class="skills-list">
                         ${product.compétences.map(skill => 
                             `<span class="skill-tag">${skill}</span>`
@@ -568,7 +582,7 @@ function renderProductPage() {
                 </div>
                 
                 <div class="product-long-description">
-                    <h3>Description détaillée</h3>
+                    <h3>Profil détaillé</h3>
                     <p>${product.longueDesc}</p>
                 </div>
             </div>

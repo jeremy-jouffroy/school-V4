@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultants - Consulteo</title>
+    <title>Consultant - Consulteo</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -32,14 +32,23 @@
             <div class="breadcrumb">
                 <a href="index.html">Accueil</a>
                 <span class="breadcrumb-separator">></span>
-                <span id="category-breadcrumb">Consultants</span>
+                <a href="#" id="category-breadcrumb-link">Consultants</a>
+                <span class="breadcrumb-separator">></span>
+                <span id="consultant-breadcrumb">Consultant</span>
             </div>
 
-            <h1 id="category-title">Consultants</h1>
-            
-            <div class="consultants-grid" id="consultants-grid">
+            <!-- Détails du consultant -->
+            <div class="product-details" id="product-details">
                 <!-- Généré par JavaScript -->
             </div>
+
+            <!-- Produits similaires -->
+            <section class="related-products">
+                <h2>Vous aimerez aussi</h2>
+                <div class="consultants-grid" id="related-consultants">
+                    <!-- Généré par JavaScript -->
+                </div>
+            </section>
         </div>
     </main>
 
@@ -63,7 +72,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             App.init();
-            App.renderCategoryPage();
+            App.renderProductPage();
         });
     </script>
 </body>
