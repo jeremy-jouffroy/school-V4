@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Pages catégories -->
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/catégorie.html?cat=Managers</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/catégorie.html?cat=Leads</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/catégorie.html?cat=Consultants</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Pages consultants - Managers -->
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=MAN-001</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=MAN-002</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=MAN-003</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=MAN-004</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=MAN-005</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=MAN-006</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Pages consultants - Leads -->
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=LEA-001</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=LEA-002</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=LEA-003</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=LEA-004</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=LEA-005</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=LEA-006</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Pages consultants - Consultants -->
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=CON-001</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=CON-002</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=CON-003</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=CON-004</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=CON-005</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/produit.html?id=CON-006</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Pages fonctionnelles -->
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/panier.html</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://jeremy-jouffroy.github.io/consulteo/compte.html</loc>
+        <lastmod>2025-06-05</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+</urlset>

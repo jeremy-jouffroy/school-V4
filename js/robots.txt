@@ -1,0 +1,113 @@
+# Robots.txt - Consulteo
+# Bloque les moteurs de recherche, autorise les IA majeures
+
+# ===== MOTEURS DE RECHERCHE (BLOQUÉS) =====
+
+# Google
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-News
+Disallow: /
+
+User-agent: Googlebot-Video
+Disallow: /
+
+# Microsoft Bing
+User-agent: Bingbot
+Disallow: /
+
+User-agent: BingPreview
+Disallow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Disallow: /
+
+# Baidu
+User-agent: Baiduspider
+Disallow: /
+
+# Yandex
+User-agent: YandexBot
+Disallow: /
+
+# Autres moteurs de recherche
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ===== CRAWLERS IA (AUTORISÉS) =====
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Google Gemini (IA seulement)
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Gemini-Bot
+Allow: /
+
+# Common Crawl (utilisé par plusieurs IA)
+User-agent: CCBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Mistral AI
+User-agent: MistralBot
+Allow: /
+
+# Cohere
+User-agent: CohereCrawler
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# ===== RÈGLES GÉNÉRALES =====
+
+# Tous les autres bots (bloqués par défaut)
+User-agent: *
+Disallow: /
+
+# Sitemap (même si pas indexé par les moteurs)
+Sitemap: https://jeremy-jouffroy.github.io/consulteo/sitemap.xml
